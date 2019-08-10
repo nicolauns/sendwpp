@@ -1,0 +1,18 @@
+<FilesMatch "\.(html|xhtml|htaccess|htpasswd|ini|log|sh|inc|bak|tpl)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+<IfModule mod_headers.c>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|css|js)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+</IfModule>
+
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [QSA,L]
