@@ -16,10 +16,10 @@ O SendWpp é uma ferramenta grátis para direcionar usuários diretamente para s
 
 #### Formatos aceitos:
 
-```http://exemplo.com/+55 (73) 9 8183-3085``` <br />
-```http://exemplo.com/(73) 9 8183-3085``` <br />
-```http://exemplo.com/+5573981833085``` <br />
-```http://exemplo.com/73981833085``` <br />
+```http://exemplo.com/+55 (73) 9 9169-3096``` <br />
+```http://exemplo.com/(73) 9 9169-3096``` <br />
+```http://exemplo.com/+5573991693096``` <br />
+```http://exemplo.com/73991693096``` <br />
 
 ###### NOTA: Minimo de 10 caracteres. Todos os caracteres diferentes de números serão ignorados. Caso não haja +55 no inicio, a API adicionara.
 
